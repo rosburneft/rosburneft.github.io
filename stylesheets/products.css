@@ -1,0 +1,218 @@
+
+body
+    {
+    margin: 0;
+    padding: 0;
+    font: 13px Trebuchet MS, Lucida Sans Unicode, Arial, sans-serif;
+    background: #E2EBED;
+    text-align: center;
+    }
+a
+    {
+    color: #307082;
+    }
+a:hover
+    {
+    color: #D60808;
+    }
+acronym
+    {
+    border: none;
+    }
+
+#container
+    {
+    margin: 0 auto;
+    width: 704px;
+    position: relative;
+    background: #fff;
+    padding: 0 10px 0 10px;
+    text-align: left;
+    }
+* html #container
+    {
+    width: 724px;
+    w\idth: 704px;
+    }
+/* Заголовок*/
+#pageHeader
+    {
+    position: absolute;
+    top: 25px;
+    left: 40px;
+    }
+
+#pageHeader h1 span
+    {
+    font-family: "Times New Roman",Times,serif;
+    font-size: 36px;
+    margin: 0;
+    /*display: none;*/
+    }
+/* end Заголовок*/
+
+h2
+    {
+    font-size:1.3em;
+    margin: 0;
+    }
+
+#quickSummary
+    {
+    padding-top: 85px;
+    /*padding-left: 12px;*/
+    }
+
+/* Форматирование для страницы описания продуктов*/
+
+#container #quickSummary .p1
+    {
+    /*font-size: 11px;*/
+    height: 171px;
+    /*padding: 12px 0 0 0 ;*/
+    background: url("topimage.jpg") no-repeat;
+    margin: 0;
+    width: 724px;
+    color: #fff;
+    }
+#container #quickSummary .p1  span
+    {
+    padding: 30px 530px 0 30px;
+    display: block;
+    margin: 0;
+    font: 12px Trebuchet MS;
+    }
+#text
+    {
+    margin: 0 20px 0 243px;
+    }
+#text p
+    {
+    line-height: 150%;
+    margin: 10px 0 10px 0;
+    text-align: justify;
+    }
+#text h3
+{
+    font-size:1.3em;
+    text-align: center;
+}
+#text h3.compname
+{
+   text-align:left;
+   /*line-height: 150%;
+   color:#000000;*/
+   /*font-weight:bold;
+   display:block;
+   font-size:1.2em;*/
+}
+#text #CompanyAbout h3, #text #productDescription h3, #text #price_list h3, #contacts h3.compname
+    {
+    margin: 40px 0 10px 0;
+    }
+/*#text #CompanyAbout h3
+{
+   text-align:left;
+}*/
+#Middle
+    {
+    padding-bottom: 40px;
+    }
+#top_menu
+   {
+      margin: 0 0 0 50px;
+   }
+#linkList
+    {
+    position: absolute;
+    top: 295px;
+    left: 0;
+    width: 210px;
+    }
+#linkList ul
+    {
+    list-style-type: none;
+    margin: 0;
+    padding: 0 0 0 40px;
+    }
+#lnavigate ul li a
+    {
+    text-decoration: underline;
+    display: inline;
+    font-size: 13px;
+    }
+#lnavigate ul li
+    {
+    font-size: 12px;
+    border-bottom: 1px solid #E6EEF0;
+    padding:5px 0;
+    }
+#footer
+    {
+    background: url("bottom.jpg") no-repeat;
+    color: #fff;
+    height: 48px;
+    /*text-align: right;
+    padding: 0 10px 0 0;
+    line-height: 26px;
+    font-size: 11px;*/
+    }
+
+/*** Tables ***/
+table
+{
+   /*border: 1px solid black;*/
+   border-collapse: collapse;
+   border-spacing: 0px;
+}
+table.t_prpc_info { border: 1px solid #2C4056;  border-collapse: collapse; width: 100%; margin-bottom: 4px; font-size: 90% }
+table.t_prpc_info th {  border: 1px solid #2C4056; background-color:#EEEEEE; padding: 4px;vertical-align: center; text-align: center;  }/*font-weight: normal;*/
+table.t_prpc_info td { vertical-align: top; text-align: center; }
+table.t_prpc_info td.tcomment {border: 1px; border-style:solid none none none; border-color: #2C4056; }
+table.t_prpc_info tr td {border: 1px; border-style:none solid none none; border-color: #2C4056; }
+
+table.t_price { border-collapse: collapse; width: 100%; margin-bottom: 4px;}
+table.t_price th { height:150%; border: 1px solid #2C4056; border-style: none none solid none;background-color:#EEEEEE; padding: 4px;vertical-align: center; text-align: center;  }/*font-weight: normal;*/
+table.t_price tr td {height:150%; border: 1px; border-style:none none solid none; border-color: #2C4056;  padding: 5px;}
+table.t_price td.price_notax, table.t_price td.price_tax
+{
+   padding-right: 30px;
+   text-align: right;
+}
+table.t_price td.prod_name
+{
+   padding-left:30px;
+}
+
+/*** end Tables ***/
+
+/*
+.highlight { background-color: #FCFD8D;}
+.highlight.token-1 { background-color: #faa;}
+.highlight.token-2 { background-color: #afa;}
+.highlight.token-3 { background-color: #aaf;}
+
+*/
+/***** Media print specific styles *****/
+@media print {
+  #quickSummary, #linkList, #footer { display:none; }
+/* Заголовок*/
+#pageHeader
+    {
+    position: absolute;
+    top: 0px;
+    left: 15px;
+    }
+
+#pageHeader h1 span
+    {
+    font-family: "Times New Roman",Times,serif;
+    font-size: 24px;
+    margin: 0;
+    }
+#text
+    { padding: 25px 25px 0 0; margin: 0;  border: 0; background: #fff; overflow: visible !important; text-align: justify;
+    /*margin-bottom: 40px;*/
+    }
+#container { background: #fff;}
+}
